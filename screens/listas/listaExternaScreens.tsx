@@ -22,7 +22,7 @@ console.log(datos);
   return (
     <View>
       <Text>lista Externa</Text>
-      <SectionList
+      <SectionList //Tambien nos permite leer listas
       sections={datos}
       renderItem={({item})=>
     <Card informacion={item}/>

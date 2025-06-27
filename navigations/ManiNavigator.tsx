@@ -17,6 +17,8 @@ import EncuentaScreens from "../screens/EncuentaScreens";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import listalocalScreens from "../screens/listas/listalocalScreens";
 import listaExternaScreens from "../screens/listas/listaExternaScreens";
+import listaPScreens from "../screens/listas/listaPScreens";
+
 
 
 const Stack = createStackNavigator();
@@ -60,6 +62,7 @@ const Top = createMaterialTopTabNavigator()
         <Top.Navigator initialRouteName="Externa">
             <Top.Screen name="Local" component={listalocalScreens}/>
             <Top.Screen name="Externa" component={listaExternaScreens}/>
+            <Top.Screen name="Prueba" component={listaPScreens}/>
         </Top.Navigator>
     )
  }
